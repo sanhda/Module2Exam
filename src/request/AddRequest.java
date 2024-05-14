@@ -49,8 +49,9 @@ public class AddRequest extends Request {
         if (loaiBenhNhan == 2) {
             System.out.print("Loại Vip (1/2/3):");
             int loaiVip = scanner.nextInt();
+            scanner.nextLine();
 
-            System.out.print("Thời hạn vip");
+            System.out.print("Thời hạn vip: ");
             String thoiHanVip = scanner.nextLine();
 
             BenhAnVip benhAn = new BenhAnVip(maBenhAn, maBenhNhan, tenBenhNhan,

@@ -1,5 +1,7 @@
 package benhan;
 
+import com.sun.xml.internal.bind.v2.TODO;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,6 +24,8 @@ public abstract class BenhAn {
     protected List<String> data = new ArrayList<>();
 
     static final String csvFile = "medical_records.csv";
+
+    // TODO: change data type for ngayNhapVien, ngayRaVien thành Date
 
     public BenhAn(String maBenhAn, String maBenhNhan,
                   String tenBenhNhan, String ngayNhapVien,
