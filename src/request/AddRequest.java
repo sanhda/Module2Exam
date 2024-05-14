@@ -18,6 +18,15 @@ public class AddRequest extends Request {
         System.out.print("Mã bệnh án:");
         String maBenhAn = scanner.nextLine();
 
+        // check ma benh nhan
+        String[] maBenhAnChecking = BenhAn.getBenhAnFromMa(maBenhAn);
+        while (maBenhAnChecking != null) {
+            System.out.println("Mã bênh án đã tồn tại");
+            System.out.print("Mã bệnh án:");
+            maBenhAn = scanner.nextLine();
+            maBenhAnChecking = BenhAn.getBenhAnFromMa(maBenhAn);
+        }
+
         System.out.print("Mã bệnh nhân:");
         String maBenhNhan = scanner.nextLine();
 
